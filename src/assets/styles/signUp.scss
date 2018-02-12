@@ -1,0 +1,120 @@
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@mixin home-card {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.signUp {
+  min-height: 100vh;
+  background-color: white;
+  @include flex-column-center;
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  &-title {
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    padding: 0 .5rem;
+    background-color: rgb(237,55,104);
+    & > p {
+      margin: 0;
+    }
+    & > img {
+      line-height: 3rem;
+    }
+  }
+  &-back {
+    width: 1.5rem;
+  }
+  &-scan {
+    width: 1.8rem;
+  }
+  &-content {
+    margin: 0.7rem 1rem 0 1rem;
+    border-radius: 5px;
+    background-color: #f5f5f7;
+    @include flex-column-center;
+    & > div {
+      @include home-card;
+      color: #737375;
+      font-size: 14px;
+      & > button {
+        width: 33%;
+        border-radius: 30px;
+        padding: .75rem 0;
+        color: #fdd1f8;
+        background: linear-gradient(to right, rgb(159, 55, 130), rgb(205, 45, 110));
+        font-size: 14px;
+        border: none;
+      }
+    }
+  }
+  &-box {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-small {
+      width: 1rem;
+      margin-right: 10px;
+      display: inline-block;
+      border-bottom: 1px #8b8b8d solid;
+    }
+  }
+  &-circle {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+    &-big {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      border-radius: 50%;
+      border: 1px #7a7a7c solid;
+    }
+    &-small {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: auto;
+    }
+    &-color {
+      background-color: #e3436b;
+    }
+  }
+  &-footer {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-bottom: 10vh;
+  }
+  &-btn {
+    border-radius: 30px;
+    padding: .75rem 0;
+    color: #fff;
+    background: linear-gradient(to right, rgb(159, 55, 130), rgb(205, 45, 110));
+    font-size: 14px;
+    width: 70%;
+    border: none;
+  }
+}

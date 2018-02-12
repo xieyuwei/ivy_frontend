@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+.app {
+  font-family: sans-serif;
+  background: linear-gradient(to top, rgb(146, 46, 130), rgb(220, 39, 102));
+  min-height: 100vh;
+  z-index: -999;
+  box-sizing: border-box;
+  &-content-item.hidden {
+    display: none;
+  }
+}
