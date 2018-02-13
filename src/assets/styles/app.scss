@@ -1,12 +1,27 @@
+@font-face {
+  font-family: 'hm-regular';
+  src: url('../fonts/hmampersanddisp-regular-webfont.woff')
+}
+@font-face {
+  font-family: 'hm-regular2';
+  src: url('../fonts/hmamperserifdisp-regular-webfont.woff')
+}
+@font-face {
+  font-family: 'hm-light';
+  src: url('../fonts/hmampersanddisp-light-webfont.woff')
+}
+@font-face {
+  font-family: 'hm-bold';
+  src: url('../fonts/hmampersanddisp-bold-webfont.woff')
+}
+
 body {
   margin: 0;
 }
 
 .app {
-  font-family: sans-serif;
-  background: linear-gradient(to top, rgb(146, 46, 130), rgb(220, 39, 102));
+  font-family: hm-light, sans-serif;
   min-height: 100vh;
-  z-index: -999;
   box-sizing: border-box;
   &-content-item.hidden {
     display: none;

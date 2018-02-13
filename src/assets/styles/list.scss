@@ -1,0 +1,14 @@
+.List {
+  padding: 0 2vw;
+  width: 25vw;
+  margin: 0;
+
+  &-container {
+    & > img {
+      width: 20px;
+    }
+  }
+}
+.iconFalse {
+  display: none;
+}
