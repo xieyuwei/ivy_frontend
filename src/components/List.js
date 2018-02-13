@@ -3,11 +3,11 @@ import '../assets/styles/list.css'
 import { desktopLists } from '../lib'
 import locationIcon from '../assets/icons/icon-location.svg'
 
-const List = ({ value, onSwitch }) => (
-  <div className='List'>
-    {
+class List extends React.Component {
+  render () {
+    return (
       desktopLists.map(({ key, title, icon, location, Function, status, Published, Expires }) => (
-        <div key={key}>
+        <div key={key} className="List">
           <div className="List-title"><span>{title}</span></div>
           <div className="List-container">
             <div className={`List-container ${icon ? '' : 'iconFalse'}`}>
@@ -22,10 +22,9 @@ const List = ({ value, onSwitch }) => (
             </div>
           </div>
         </div>
-        //通过类名来判断是否显示，看一下源代码里active的样式，这里类名没有-，不知道会不会出错
-      ))
-    }
-  </div>
-)
+      )
+    ))
+  }
+}
 
 export default List
