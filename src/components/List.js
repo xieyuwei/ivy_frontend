@@ -10,15 +10,18 @@ class List extends React.Component {
         <div key={key} className="List">
           <div className="List-title"><span>{title}</span></div>
           <div className="List-container">
-            <div className={`List-container ${icon ? '' : 'iconFalse'}`}>
-              <img src={locationIcon} alt="locationIcon" />
-            </div>
+            <img src={locationIcon} className={`List-container-icon ${icon ? '' : 'iconFalse'}`} alt="locationIcon"/>
             <div className="List-container-content">
-              <div><span>Location</span><span>{location}</span></div>
-              <div><span>Function</span><span>{Function}</span></div>
-              <div><span>Status</span><span>{status}</span></div>
-              <div><span>Published</span><span>{Published}</span></div>
-              <div><span>Expires</span><span>{Expires}</span></div>
+              <div><span className="List-container-content-name">Location</span><span
+                className="List-container-content-filler">{location}</span></div>
+              <div><span className="List-container-content-name">Function</span><span
+                className="List-container-content-filler">{Function}</span></div>
+              <div><span className="List-container-content-name">Status</span><span
+                className="List-container-content-filler">{status}</span></div>
+              <div><span className="List-container-content-name">Published</span><span
+                className="List-container-content-filler">{Published}</span></div>
+              <div><span className="List-container-content-name">Expires</span><span
+                className="List-container-content-filler">{Expires}</span></div>
             </div>
           </div>
         </div>

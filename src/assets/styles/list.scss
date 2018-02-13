@@ -1,11 +1,38 @@
 .List {
-  padding: 0 2vw;
+  margin: 0 2vw;
   width: 25vw;
-  margin: 0;
+  height: 35vh;
+  //margin: 0;
   display: inline-block;
+  border-top: 1px #d7d8d9 solid;
+  &-title {
+    width: 25vw;
+    margin: 1rem auto;
+    height: 5vh;
+    font-family: hm-regular2;
+
+  }
   &-container {
-    & > img {
+    height: 25vh;
+    width: 25vw;
+
+    &-icon {
       width: 20px;
+      display: inline-block;
+    }
+    &-content {
+      display: inline-block;
+      &-name {
+        width: 6vw;
+        display: inline-block;
+        font-size: .6rem;
+        font-family: hm-bold;
+      }
+      &-filler {
+        font-size: .6rem;
+        display: inline-block;
+
+      }
     }
   }
 }

@@ -4,6 +4,8 @@ import avator from './../assets/images/profile-photo.jpg';
 import banner from './../assets/images/banner-image.jpg';
 import hm from './../assets/logos/hm-logo.svg';
 import move from './../assets/logos/move-logo.svg';
+
+import down from './../assets/icons/icon-down-arrow.svg';
 import List from './List'
 
 
