@@ -68,12 +68,50 @@
       }
     }
   }
+  &-selector {
+    margin: 0 8vw;
+    &-firstRow {
+      width: 24vw;
+      text-align: right;
+      margin-right: 0;
+      //margin: 2vh 0 1vh 60vw;
+      font-size: .6rem;
+      & > p:nth-child(1) {
+        color: #c1c1c2;
+        height: 3vh;
+        line-height: 3vh;
+        display: inline-block;
+        //width: 15%;
+      }
+      & > div:nth-child(2) {
+        //width: 80%;
+        display: inline-block;
+        border:1px black solid;
+        margin-left: 1vw;
+        & > p {
+          height: 3vh;
+          line-height: 3vh;
+          display: inline-block;
+          margin-left: 1vw;
+          margin-right:4vw ;
+        }
+        & > i {
+          margin: 0 2vw;
+        }
+      }
+    }
+    &-secondRow {
+      width: 88vw;
+
+    }
+
+
+  }
   &-content {
     margin: 0 6vw;
-    //width: 88vw;
-    //display: flex;
-    //flex-direction:row;
-    //justify-content:center;
+  }
+  &-footer {
+
   }
 
 }

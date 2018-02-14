@@ -12,16 +12,26 @@ class List extends React.Component {
           <div className="List-container">
             <img src={locationIcon} className={`List-container-icon ${icon ? '' : 'iconFalse'}`} alt="locationIcon"/>
             <div className="List-container-content">
-              <div><span className="List-container-content-name">Location</span><span
-                className="List-container-content-filler">{location}</span></div>
-              <div><span className="List-container-content-name">Function</span><span
-                className="List-container-content-filler">{Function}</span></div>
-              <div><span className="List-container-content-name">Status</span><span
-                className="List-container-content-filler">{status}</span></div>
-              <div><span className="List-container-content-name">Published</span><span
-                className="List-container-content-filler">{Published}</span></div>
-              <div><span className="List-container-content-name">Expires</span><span
-                className="List-container-content-filler">{Expires}</span></div>
+              <div>
+                <span className="List-container-content-name">Location</span>
+                <span className="List-container-content-filler">{location}</span>
+              </div>
+              <div>
+                <span className="List-container-content-name">Function</span>
+                <u className="List-container-content-filler">{Function}</u>
+              </div>
+              <div>
+                <span className="List-container-content-name">Status</span>
+                <span className="List-container-content-filler">{status}</span>
+              </div>
+              <div>
+                <span className="List-container-content-name">Published</span>
+                <span className="List-container-content-filler">{Published}</span>
+              </div>
+              <div>
+                <span className="List-container-content-name">Expires</span>
+                <span className="List-container-content-filler">{Expires}</span>
+              </div>
             </div>
           </div>
         </div>

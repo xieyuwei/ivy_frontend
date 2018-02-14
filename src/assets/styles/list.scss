@@ -15,15 +15,17 @@
   &-container {
     height: 25vh;
     width: 25vw;
-
     &-icon {
-      width: 20px;
+      width: 3vw;
+      height: 3vh;
+      padding-bottom: 8vh;
       display: inline-block;
     }
     &-content {
       display: inline-block;
       &-name {
         width: 6vw;
+        margin: 0 1vw;
         display: inline-block;
         font-size: .6rem;
         font-family: hm-bold;

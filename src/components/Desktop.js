@@ -5,7 +5,6 @@ import banner from './../assets/images/banner-image.jpg';
 import hm from './../assets/logos/hm-logo.svg';
 import move from './../assets/logos/move-logo.svg';
 
-import down from './../assets/icons/icon-down-arrow.svg';
 import List from './List'
 
 
@@ -34,10 +33,20 @@ class Desktop extends React.Component {
           <p>VA<span>CACI</span>ES</p>
         </div>
         <div className='Desktop-selector'>
-          <p>Sort by</p>
-          <div>
-            Newest Vacancy
-            <span><i></i></span>
+          <div className='Desktop-selector-firstRow'>
+            <p>Sort by</p>
+            <div>
+              <p>Newest Vacancy</p>
+              <i className="fa fa-chevron-down" aria-hidden="true"/>
+            </div>
+          </div>
+          <div className='Desktop-selector-secondRow'>
+            <span>FILTERS<i className="fa fa-chevron-down" aria-hidden="true" /></span>
+            <div className='Desktop-selector-secondRow-find'>
+              <span>Find</span>
+              <input placeholder="Type any Job Title"/>
+              <i className="fa fa-chevron-down" aria-hidden="true" />
+            </div>
           </div>
         </div>
         <div className='Desktop-content'>
