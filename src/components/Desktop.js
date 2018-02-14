@@ -41,11 +41,12 @@ class Desktop extends React.Component {
             </div>
           </div>
           <div className='Desktop-selector-secondRow'>
-            <span>FILTERS<i className="fa fa-chevron-down" aria-hidden="true" /></span>
+            <p>F I L T E R S<i className="fa fa-plus" aria-hidden="true" /></p>
             <div className='Desktop-selector-secondRow-find'>
-              <span>Find</span>
+              <p>F I N D</p>
               <input placeholder="Type any Job Title"/>
-              <i className="fa fa-chevron-down" aria-hidden="true" />
+
+              <i className="fa fa-search" aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -53,8 +54,11 @@ class Desktop extends React.Component {
           <List/>
         </div>
         <div className='Desktop-footer'>
-          <p>Align QR Code / barcode within</p>
-          <p>frame to scan</p>
+          <img src={hm} alt="hm-logo"/>
+          <div className='Desktop-footer-right'>
+            <p>BACK TO TOP</p>
+            <i className="fa fa-chevron-up" aria-hidden="true"/>
+          </div>
         </div>
       </div>
     )

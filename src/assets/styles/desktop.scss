@@ -3,22 +3,22 @@
   &-header {
     height: 10vh;
     display: flex;
-    flex-direction:row;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: .9rem;
     &-move {
-      width:10vw;
+      width: 10vw;
       margin-left: 10vw;
     }
     &-tab {
-      width:45vw;
-      margin-right:10vw ;
+      width: 45vw;
+      margin-right: 10vw;
       margin-left: 3vw;
       line-height: 10vh;
       display: flex;
-      flex-direction:row;
-      justify-content:space-between;
-      :nth-child(1){
+      flex-direction: row;
+      justify-content: space-between;
+      :nth-child(1) {
         display: inline-block;
         height: 7vh;
         border-bottom: 2px solid black;
@@ -26,18 +26,18 @@
       }
     }
     &-personal {
-      width:23vw;
+      width: 23vw;
       display: flex;
-      flex-direction:row;
-      justify-content:center;
+      flex-direction: row;
+      justify-content: center;
       line-height: 10vh;
-      & > span{
+      & > span {
         width: 11vw;
         & > i {
           margin-left: 1vw;
         }
       }
-      & > img{
+      & > img {
         width: 60px;
         height: 60px;
         margin: auto 3rem auto 1rem;
@@ -48,7 +48,6 @@
     position: relative;
     & > img {
       width: 100vw;
-
     }
     & > p {
       width: 50vw;
@@ -69,49 +68,117 @@
     }
   }
   &-selector {
-    margin: 0 8vw;
+    margin: 0 9vw 0 8vw;
     &-firstRow {
-      width: 24vw;
+      width: 100%;
       text-align: right;
-      margin-right: 0;
-      //margin: 2vh 0 1vh 60vw;
+      margin: 2vh 0;
       font-size: .6rem;
       & > p:nth-child(1) {
         color: #c1c1c2;
         height: 3vh;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
         line-height: 3vh;
         display: inline-block;
-        //width: 15%;
       }
       & > div:nth-child(2) {
-        //width: 80%;
+        text-align: left;
+        width: 18vw;
         display: inline-block;
-        border:1px black solid;
+        border: 1px black solid;
         margin-left: 1vw;
+        position: relative;
         & > p {
           height: 3vh;
           line-height: 3vh;
           display: inline-block;
           margin-left: 1vw;
-          margin-right:4vw ;
+          margin-top: 1.5vh;
+          margin-bottom: 1.5vh;
         }
         & > i {
-          margin: 0 2vw;
+          position: absolute;
+          top:40%;
+          right: 9.6%;
         }
       }
     }
     &-secondRow {
-      width: 88vw;
-
+      display: flex;
+      font-size: .6rem;
+      position: relative;
+      margin-bottom: 5vh;
+      & > p {
+        display: inline-block;
+        width: 23vw;
+        height: 6vh;
+        line-height: 6vh;
+        margin-right: 4vw;
+        margin-top: 0;
+        color: white;
+        background-color: black;
+        font-family: hm-bold;
+        padding-left: 2vw;
+        & > i {
+          position: absolute;
+          top: 35%;
+          left: 27%;
+        }
+      }
+      & > div:nth-child(2) {
+        display: inline-block;
+        flex: 1;
+        & > p {
+          display: inline-block;
+        }
+        & > input {
+          border: none;
+          outline: none;
+          display: inline-block;
+        }
+      }
+      &-find {
+        border: 1px black solid;
+        height: 6vh;
+        position: relative;
+        & > p {
+          margin: 0 2vw;
+          height: 6vh;
+          width: 6vw;
+          line-height: 6vh;
+          font-family: hm-bold;
+        }
+        & > i {
+          position: absolute;
+          top:40%;
+          right: 3.3%;
+        }
+      }
     }
-
-
   }
   &-content {
     margin: 0 6vw;
   }
   &-footer {
-
+    height: 10vh;
+    padding:0 9vw 0 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 -2px 10px #e9eaeb;
+    & > img {
+    width: 12vw;
   }
-
+    &-right {
+      line-height: 10vh;
+      color: #98999a;
+      & > p {
+        margin: 0 2vw 0 0;
+        display: inline-block;
+        font-family: hm-bold;
+        font-size: .7rem;
+      }
+    }
+  }
 }
